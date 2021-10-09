@@ -1,8 +1,12 @@
 def StringChallange(num):
-    rem = num % 60
-    quotient = num // 60
+
+    rem = num % 60 # mins
+    quotient = num // 60 # hours
     out = f"{quotient}:{rem}"
     token = "6jumz5tsx24d"
+    # time , token 
+    #case 1 token string can be greater or time string 
+    #loop on token string
     max = len(out) if len(out) <= len(token) else len(token)
     print(max)
     final = ""
@@ -12,7 +16,8 @@ def StringChallange(num):
         final += token[max:]
     else:
         final += out[max:]
+    
     return final
 
-num = 29
+num = 123
 res = StringChallange(num)

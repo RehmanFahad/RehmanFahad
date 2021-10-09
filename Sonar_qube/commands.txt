@@ -1,0 +1,9 @@
+docker run -p 8080:8080 --name=jenkins-master jenkins/jenkins
+
+
+Please use the following password to proceed to installation:
+
+8c7bfe7955644ea68eb5336324528fbf
+
+This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
+
